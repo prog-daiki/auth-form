@@ -35,7 +35,7 @@ const Input: React.FC<InputProps> = ({
           autoComplete={id}
           disabled={disabled}
           {...register(id, { required })}
-          className={clsx('form-input block w-full rounded-md border-1 py-1.5 px-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-sky-600',
+          className={clsx(' block w-full rounded-md border-[1px] py-1.5 px-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-sky-600',
             errors[id] && 'focus;ring-rose-600',
             disabled && 'opacity-50 cursor-default',
           )}
