@@ -72,7 +72,7 @@ const AuthForm = () => {
   }
 
   return (
-    <div className="mt-8 mx-auto md:w-1/3">
+    <div className="mt-8 mx-auto w-full md:w-1/3">
       <div className="bg-white px-4 py-8 shadow rounded-lg w-full">
         <form className="space-y-6" onSubmit={handleSubmit(onSubmit)}>
           {variant === 'REGISTER' && (

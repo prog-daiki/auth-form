@@ -11,7 +11,9 @@ const ProfilePage = () => {
         </h2>
       </div>
       <div className='flex justify-center mt-6'>
-        <button className='bg-gray-500 text-white rounded-md p-4' onClick={() => signOut()}>ログアウト</button>
+        <button className='bg-gray-500 text-white rounded-md p-4' onClick={() => signOut({ redirect: true, callbackUrl: "/" })}>
+          ログアウト
+        </button>
       </div>
     </div>
   )
